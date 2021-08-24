@@ -225,6 +225,7 @@ var saveTasks = function() {
 
 
 var loadTasks = function() {
+    tasks = [];
     tasks = localStorage.getItem("tasks");
     tasks = JSON.parse(tasks);
 
@@ -257,7 +258,7 @@ var loadTasks = function() {
             tasksCompletedE1.appendChild(listItemE1);
         }
      };
-     i++;
+    i++;
 };
 
 loadTasks();
